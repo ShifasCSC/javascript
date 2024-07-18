@@ -21,10 +21,10 @@
 // console.log(b);
 
 
-//PRINT FIZZ BUZZ BY 
-// console.log("to push fizz buzz into an array");
+// //PRINT FIZZ BUZZ BY 
+
 // n=[]
-// num=prompt("enter a number")
+// num =prompt("enter a number")
 // console.log("you are entered"+num);
 // for(i=1;i<=num;i++)
 // {
@@ -36,7 +36,7 @@
 //     else if (i%5==0)
 //     {
 //         n.push("buzz");
-                                             /////this fizz buzz code is not correct////
+                                        
 //     } 
 //    else if(i%3==0)
 //     {
@@ -49,3 +49,49 @@
 //     }
 // }
 // console.log(n);
+
+
+
+// TODAYS NEW TASK----------------------------------------------
+a=[]
+while (true) {
+    
+    num =prompt("1, addtask\n2,displaytask\n3,edittask\n4,deletetas\nk5,exit\n Enter your choice!!!");
+    if(num==1)
+        {
+            value=prompt("enter the value");
+            a.push(value)
+            
+        }
+        else if (num==2) 
+            {
+            str="";
+            for(i=0;i<a.length;i++)
+            {
+               str=`[${i+1}]${a[i]}\n`
+            }
+             alert(str);
+
+              
+                
+            }
+            else if (num==3)
+            {
+                edit=prompt("enter the value to edit")
+
+
+            } 
+            else if (num==4)
+            {
+                a.pop()
+    
+            } 
+            else if(num==5)
+            {
+              break;
+            }
+            else {
+                alert("invalid input");
+    
+            }
+        }
