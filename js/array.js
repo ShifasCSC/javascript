@@ -56,7 +56,7 @@
 a=[]
 while (true) {
     
-    num =prompt("1, addtask\n2,displaytask\n3,edittask\n4,deletetas\nk5,exit\n Enter your choice!!!");
+    num =prompt("1, addtask\n2,displaytask\n3,edittask\n4,deletetask\n5,exit\n Enter your choice!!!");
     if(num==1)
         {
             value=prompt("enter the value");
@@ -68,9 +68,9 @@ while (true) {
             str="";
             for(i=0;i<a.length;i++)
             {
-               str=`[${i+1}]${a[i]}\n`
+               str+=`[${i+1}] ${a[i]}\n`
             }
-             alert(str);
+             alert(str)
 
               
                 
@@ -78,12 +78,15 @@ while (true) {
             else if (num==3)
             {
                 edit=prompt("enter the value to edit")
+                value=prompt("enter data for replace")
+                a[i-1]=value
 
 
             } 
             else if (num==4)
             {
-                a.pop()
+                del=prompt("enter the value for delete")
+                a.splice(del-1,1)
     
             } 
             else if(num==5)
