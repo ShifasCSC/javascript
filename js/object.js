@@ -44,9 +44,12 @@ while (true) {
     }
     else if (option==2)
     {
-        
+
         str=""
-        for(i=0;i<Ob)
+        for(i=0;i<Ob.length;i++)
+        {
+            str+=`[${i+1}] {$c[i].name} {$c[i].phone}`
+        }
 
     }
 
