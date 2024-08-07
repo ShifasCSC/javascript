@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        
+        #list{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card{
+            width: 300px;
+            height: 250px;
+            border: none;
+            margin: 20px;
+            padding: 10px 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 1px rgb(87, 3, 3);
+           transition: .5s;
+           background-color: rgb(235, 241, 238);
+        }
+        .card:hover{
+            background-color: rgba(145, 242, 49, 0.421);
+            box-shadow: 5px 5px 10px rgb(87, 3, 3);
+        }
+        button{
+            border: none;
+            background-color: rgb(235, 138, 63);
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            margin-left: 720px;
+        }
+        button:hover{
+            background-color: rgb(180, 145, 69);
+        }
+        h1{
+            text-align: center;
+            color: rgb(1, 25, 47);
+        }
+        h2{
+            text-align: center;
+        }
+         .thm{
+            margin-left: 10px;
+           width: 50px; 
+        } 
+        .image{
+            margin-left: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body><h1>Photos</h1>
+    <button onclick="fetchData()">Click Me</button>
+    <div id="list">
+
+    </div>
+    <script src="./js/photos.js"></script>
+    
+</body>
+</html>

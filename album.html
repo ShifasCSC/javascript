@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+        }
+            .card{
+            height: 150px;
+            width: 300px;
+            border: none;
+            color: rgb(2, 5, 8);
+            background-color: rgb(238, 243, 246);
+            align-items: center;
+            text-align: center;
+            padding: 10px 30px;
+            
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px 4px rgb(7, 10, 10);
+        }
+        button{
+            align-items: center;
+            box-shadow: 1px 1px 5px 2px rgb(134, 136, 136);
+            padding: 5px 10px;
+            color: aliceblue;
+            background-color: black;
+            border: none;
+            border-radius: 5px;   
+        }
+        .maina{
+
+            margin-top: 10%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="maina">
+
+        <h1><U>ALBUMS</U></h1>
+        <button onclick="submit()">submit</button>
+        <div id="main">
+            
+        </div>
+    </div>
+   <script src="./js/album.js"></script> 
+</body>
+</html>

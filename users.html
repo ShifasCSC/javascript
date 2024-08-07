@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        
+        #list{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+           transition: .5s;
+           background-color: rgb(26, 124, 160);
+           padding: 10px 10px;
+           border: 1px solid rgb(9, 2, 2);
+           border-radius: 6px;
+        }
+        .card:hover{
+            background-color: rgba(249, 249, 242, 0.326);
+            box-shadow: 2px 5px 1px rgba(9, 9, 9, 0.905);
+            scale: 1;
+            transform: translate(5px , 5px);
+        }
+        button{
+            border: none;
+            background-color: rgba(14, 70, 116, 0.952);
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+            margin-left: 720px;
+        }
+        button:hover{
+            background-color: rgb(88, 41, 49);
+        }
+        h1{
+            text-align: center;
+            color: rgb(18, 74, 117);
+            text-shadow: 3px 1px 3px rgb(249, 246, 246);
+        }
+    </style>
+</head>
+<body>
+    <h1>Users</h1>
+    <button onclick="fetchData()">Click Me</button>
+    <div id="list">
+
+    </div>
+    <script src="./js/users.js"></script>
+</body>
+</html>
