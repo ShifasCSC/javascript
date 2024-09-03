@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cursor{
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(rgb(115, 39, 39),black);
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    /* margin: 100px; */
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    
+
+}
