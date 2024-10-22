@@ -1,0 +1,20 @@
+.anime{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    font-size: xx-large;
+    
+    
+}
+
+@keyframes anime{
+ 0%{background-color: aquamarine;color: rgb(251, 247, 247); left: 0%;top: 0%;} 
+ 25%{background-color: black;left: 30%;color: aliceblue;  top: 0%;}
+ 50%{background-color: rgb(152, 170, 20);color: chartreuse;  left: 30%;top: 30%;}
+ 75%{background-color: brown;left:0% ;top: 30%;}
+ 100%{background-color: aquamarine;left: 0%;top: 0%;}
+}
