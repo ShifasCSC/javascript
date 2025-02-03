@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      
+        #screen{
+            height: 300px;
+            width: 200px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
-    <input id="input" type="text">
+    <!-- <input id="input" type="text">
+
     <button onclick="disp()">submit</button>
     <h1 id="displ"></h1>
     <script>
@@ -44,6 +53,19 @@
         //     }
             
         // }
-    </script>
+    </script> -->
+
+<div id="screen">
+</div>
+<button onclick="color('red')">red</button>
+<button onclick="color('green')">green</button>
+<button onclick="color('blue')">blue</button>
+<button onclick="color('orange')">orange</button>
+
+<script>
+    function color(col){
+     document.getElementById("screen").style.background=col
+    }
+</script>
 </body>
 </html>
