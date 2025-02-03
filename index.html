@@ -57,14 +57,18 @@
 
 <div id="screen">
 </div>
-<button onclick="color('red')">red</button>
+<input style="margin-top: 20px;" type="text" id="choice">
+<button id="btn" onclick="color()">submit</button>
+<!-- <button onclick="color('red')">red</button>
 <button onclick="color('green')">green</button>
 <button onclick="color('blue')">blue</button>
-<button onclick="color('orange')">orange</button>
+<button onclick="color('orange')">orange</button> -->
 
 <script>
-    function color(col){
-     document.getElementById("screen").style.background=col
+    
+    function color(){
+        var inputs=document.getElementById("choice").value
+     document.getElementById("screen").style.background=inputs
     }
 </script>
 </body>
