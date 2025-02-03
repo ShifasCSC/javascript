@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="text">
+    <button onclick="disp()">submit</button>
+    <h1 id="displ"></h1>
+    <script>
+        async function disp(){
+            try{
+                const val=document.getElementById("input").value
+                if(val=="shifas"){
+                    
+                    alert(val)
+                }else{
+                    document.getElementById("displ").innerHTML=val
+                    // alert("button clicked")
+                }
+
+            }catch(error){
+                console.log(error);
+                
+            }
+
+        }
+
+        // function disp(){
+        //     let b=20
+        //     let a=10
+        //     const sum=a+b
+        //     for(var i=a;i<sum;i++){
+        //         if(i%2!=0){
+        //             console.log("odd numbers ="+i);
+
+        //         }else{
+        //             console.log("even");
+                    
+        //         }
+
+        //     }
+            
+        // }
+    </script>
+</body>
+</html>
